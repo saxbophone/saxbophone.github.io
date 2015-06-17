@@ -1,0 +1,92 @@
+/*
+    Here begineth the rigid, fixed styles.
+*/
+
+* {
+    font-family: 'Ubuntu';
+    text-align: center;
+}
+
+section {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    font-weight: normal;
+}
+
+q {
+    font-style: italic;
+}
+
+footer {
+    margin: 2em;
+}
+
+.footerP {
+    font-weight: lighter;
+}
+/*
+    Here endeth the rigid, fixed styles.
+*/
+
+/*
+    Here begineth the media queries :D
+*/
+
+@media (min-width: 200px) {
+    h1 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.5rem;
+    }
+    q, .footerP {
+        font-size: 0.35rem;
+    }
+}
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    q, .footerP {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    q, .footerP {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 960px) {
+    h1 {
+        font-size: 8rem;
+    }
+    p {
+        font-size: 2.5rem;
+    }
+    q, .footerP {
+        font-size: 1.5rem;
+    }
+}
+
+/*
+    Here endeth everything...
+*/
