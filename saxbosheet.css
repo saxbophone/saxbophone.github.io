@@ -7,10 +7,9 @@
 
 html {
     border-radius: 0rem;
-    background-color: black;
 }
 
-body {
+html, body {
     background-color: #543D9C;
 }
 
@@ -45,14 +44,20 @@ main {
 
 .page-title {
     margin-bottom: 0rem;
+    white-space:nowrap;
 }
 
 .page-description {
     margin-top: 0rem;
+    white-space:nowrap;
 }
 
 .banner-message {
     margin-top: 2rem;
+}
+
+a {
+    white-space:nowrap;
 }
 
 nav > a {
