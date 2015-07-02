@@ -1,92 +1,95 @@
-/*
-    Here begineth the rigid, fixed styles.
-*/
+@import "noto_emoji.css";
 
 * {
-    font-family: 'Ubuntu';
+    border-radius: 0.5rem;
+    font-family: "Muli";
+}
+
+body {
+    background-color: #543D9C;
+}
+
+header, nav, main {
+    /*padding-left: 0.5rem;*/
+}
+
+header {
+    background-color: #200050;
+    color: white;
+    animation:colourCycle 2s linear;
+}
+
+@keyframes colourCycle {
+    0% {background-color: #320030;}
+    100% {background-color: #200050;}
+}
+
+nav {
+    color: white;
+    padding: 0.75rem;
+}
+
+.main-nav {
+    background-color: #2B1375;
+}
+
+.side-nav {
+    background-color: #6333F2;
+}
+
+main {
+    background-color: #A68BF7;
+    color: #260045;
+}
+
+.page-title {
+    margin-bottom: 0rem;
+}
+
+.page-description {
+    margin-top: 0rem;
+}
+
+.banner-message {
+    margin-top: 2rem;
+}
+
+nav > a {
     text-align: center;
+    transition: all 1s linear;
 }
 
-section {
-    margin-top: 2em;
-    margin-bottom: 2em;
+nav > a:hover, nav > a:active {
+    transition: all 0.5s linear;
 }
 
-h1 {
-    font-weight: bold;
+nav > a, nav > a:link, nav > a:hover, nav > a:active, nav > a:visited {
+    background-color: #200050;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
 }
 
-p {
-    font-weight: normal;
+.main-nav > a {
+    margin: 0rem 0.25rem;
 }
 
-q {
-    font-style: italic;
+.side-nav > a {
+    margin: 0.25rem 0rem;
 }
 
-footer {
-    margin: 2em;
+nav > a:hover, nav > a:active {
+    background-color: #542A75;
 }
 
-footer > p {
-    font-weight: lighter;
-}
-/*
-    Here endeth the rigid, fixed styles.
-*/
-
-/*
-    Here begineth the media queries :D
-*/
-
-@media (min-width: 200px) {
-    h1 {
-        font-size: 1rem;
-    }
-    p {
-        font-size: 0.5rem;
-    }
-    q, footer > p {
-        font-size: 0.35rem;
-    }
+nav > a:hover {
+    color: white;
 }
 
-@media (min-width: 400px) {
-    h1 {
-        font-size: 3rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    q, footer > p {
-        font-size: 0.75rem;
-    }
+nav > a:active {
+    color: #260045;
 }
 
-@media (min-width: 600px) {
-    h1 {
-        font-size: 4rem;
-    }
-    p {
-        font-size: 1.5rem;
-    }
-    q, footer > p {
-        font-size: 1rem;
-    }
+.symbol {
+    font-family: "Noto_Emoji";
 }
-
-@media (min-width: 960px) {
-    h1 {
-        font-size: 8rem;
-    }
-    p {
-        font-size: 2.5rem;
-    }
-    q, footer > p {
-        font-size: 1.5rem;
-    }
-}
-
-/*
-    Here endeth everything...
-*/
