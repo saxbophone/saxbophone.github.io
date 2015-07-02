@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #542A75;
+    background-color: #543D9C;
 }
 
 header, nav, main {
@@ -30,15 +30,15 @@ nav {
 }
 
 .main-nav {
-    background-color: #6000AD;
+    background-color: #2B1375;
 }
 
 .side-nav {
-    background-color: #AF77C9;
+    background-color: #6333F2;
 }
 
 main {
-    background-color: #A56AD4;
+    background-color: #A68BF7;
     color: #260045;
 }
 
@@ -64,7 +64,7 @@ nav > a:hover, nav > a:active {
 }
 
 nav > a, nav > a:link, nav > a:hover, nav > a:active, nav > a:visited {
-    background-color: #420075;
+    background-color: #200050;
     padding: 0.5rem;
     color: white;
     text-decoration: none;
