@@ -5,12 +5,13 @@
     font-family: "Muli";
 }
 
-body {
-    background-color: #543D9C;
+html {
+    border-radius: 0rem;
+    background-color: black;
 }
 
-header, nav, main {
-    /*padding-left: 0.5rem;*/
+body {
+    background-color: #543D9C;
 }
 
 header {
