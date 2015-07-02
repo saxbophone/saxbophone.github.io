@@ -1,5 +1,36 @@
+* {
+    border-radius: 0.25rem;
+    font-family: "Muli";
+}
+
+body {
+    background-color: #542A75;
+}
+
+header, nav, main {
+    padding-left: 0.5rem;
+}
+
 header {
-    background-color: purple;
+    background-color: #420075;
     color: white;
-    padding-left: 1rem;
+}
+
+nav {
+    background-color: #6000AD;
+    color: white;
+    margin: 1rem 0rem;
+}
+
+main {
+    background-color: #A56AD4;
+    color: #260045;
+}
+
+header > h1 {
+    margin-bottom: 0rem;
+}
+
+header > p {
+    margin-top: 0rem;
 }
