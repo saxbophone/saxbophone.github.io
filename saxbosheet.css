@@ -14,8 +14,14 @@ header, nav, main {
 }
 
 header {
-    background-color: #420075;
+    background-color: #200050;
     color: white;
+    animation:colourCycle 2s linear;
+}
+
+@keyframes colourCycle {
+    0% {background-color: #320030;}
+    100% {background-color: #200050;}
 }
 
 nav {
@@ -42,6 +48,19 @@ main {
 
 .page-description {
     margin-top: 0rem;
+}
+
+.banner-message {
+    margin-top: 2rem;
+}
+
+nav > a {
+    text-align: center;
+    transition: all 1s linear;
+}
+
+nav > a:hover, nav > a:active {
+    transition: all 0.5s linear;
 }
 
 nav > a, nav > a:link, nav > a:hover, nav > a:active, nav > a:visited {
