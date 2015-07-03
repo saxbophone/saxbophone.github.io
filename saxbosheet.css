@@ -1,4 +1,5 @@
 @import "noto_emoji.css";
+@import "octicons.css";
 
 * {
     border-radius: 0.5rem;
