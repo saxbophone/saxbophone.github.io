@@ -100,3 +100,12 @@ nav > a:active {
 .symbol {
     font-family: "Noto_Emoji";
 }
+
+strong {
+    font-family: "Arial";
+}
+
+.article {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+}
