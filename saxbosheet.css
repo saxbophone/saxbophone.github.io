@@ -13,29 +13,6 @@
   margin: 0 0;
 }
 
-body {
-  width: 800px;
-}
-
-body, section, header, h1, h2, h3, h4, h5, p, a, nav, article {
-  /*
-   * I want a thin border around every 'visible' element.
-   * I also want a thin margin and padding
-   */
-  border-style: solid;
-  border-width: 1px;
-  margin: 1px;
-  padding: 1px;
-}
-
-body, section, header, nav, a {
-  display: inline-block;
-  text-align: center;
-}
-
-h1, a {
-  font-weight: bold;
-}
 /*
  * Put [links] inside a charming pair of square braces
  */
