@@ -14,6 +14,14 @@
 }
 
 /*
+ * Hard-code the body width for now.
+ * FIXME: Should be responsive in future.
+ */
+body {
+  width: 640px;
+}
+
+/*
  * Put [links] inside a charming pair of square braces
  */
 a:before {
