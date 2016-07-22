@@ -1,111 +1,64 @@
-@import "noto_emoji.css";
-@import "octicons.css";
-
 * {
-    border-radius: 0.5rem;
-    font-family: "Muli";
+  /*
+   * RESET spacing, colours and text decorations.
+   */
+  text-decoration: none;
+  font-family: Courier;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  background-color: white;
+  padding: 0 0;
+  border: 0 0;
+  margin: 0 0;
 }
 
-html {
-    border-radius: 0rem;
+body {
+  width: 800px;
 }
 
-html, body {
-    background-color: #543D9C;
+body, section, header, h1, h2, h3, h4, h5, p, a, nav, article {
+  /*
+   * I want a thin border around every 'visible' element.
+   * I also want a thin margin and padding
+   */
+  border-style: solid;
+  border-width: 1px;
+  margin: 1px;
+  padding: 1px;
 }
 
-header {
-    background-color: #200050;
-    color: white;
-    animation:colourCycle 2s linear;
+body, section, header, nav, a {
+  display: inline-block;
+  text-align: center;
 }
 
-@keyframes colourCycle {
-    0% {background-color: #320030;}
-    100% {background-color: #200050;}
+h1, a {
+  font-weight: bold;
+}
+/*
+ * Put [links] inside a charming pair of square braces
+ */
+a:before {
+  content: "[";
+}
+a:after {
+  content: "]";
 }
 
-nav {
-    color: white;
-    padding: 0.75rem;
+/*
+ * Link change states
+ */
+a:hover {
+  color: white;
+  background-color: black;
 }
-
-.main-nav {
-    background-color: #2B1375;
+a:active {
+  font-weight: normal;
 }
-
-.side-nav {
-    background-color: #6333F2;
+a:active:before {
+  content: ">";
 }
-
-main {
-    background-color: #A68BF7;
-    color: #260045;
-}
-
-.page-title {
-    margin-bottom: 0rem;
-    white-space:nowrap;
-}
-
-.page-description {
-    margin-top: 0rem;
-    white-space:nowrap;
-}
-
-.banner-message {
-    margin-top: 2rem;
-}
-
-a {
-    white-space:nowrap;
-}
-
-nav > a {
-    text-align: center;
-    transition: all 1s linear;
-}
-
-nav > a:hover, nav > a:active {
-    transition: all 0.5s linear;
-}
-
-nav > a, nav > a:link, nav > a:hover, nav > a:active, nav > a:visited {
-    background-color: #200050;
-    padding: 0.5rem;
-    color: white;
-    text-decoration: none;
-}
-
-.main-nav > a {
-    margin: 0rem 0.25rem;
-}
-
-.side-nav > a {
-    margin: 0.25rem 0rem;
-}
-
-nav > a:hover, nav > a:active {
-    background-color: #542A75;
-}
-
-nav > a:hover {
-    color: white;
-}
-
-nav > a:active {
-    color: #260045;
-}
-
-.symbol {
-    font-family: "Noto_Emoji";
-}
-
-strong {
-    font-family: "Arial";
-}
-
-.article {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
+a:active:after {
+  content: "<";
 }
