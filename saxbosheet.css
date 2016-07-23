@@ -6,19 +6,36 @@
   font-family: Courier;
   font-style: normal;
   font-weight: normal;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   padding: 0 0;
   border: 0 0;
   margin: 0 0;
 }
 
 /*
+ * Layout
+ */
+html {
+  text-align: center;
+}
+/*
  * Hard-code the body width for now.
  * FIXME: Should be responsive in future.
  */
 body {
   width: 640px;
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+}
+
+section {
+  text-align: left;
+}
+
+strong {
+  font-weight: bold;
 }
 
 /*
@@ -35,8 +52,9 @@ a:after {
  * Link change states
  */
 a:hover {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
+  font-weight: bold;
 }
 a:active {
   font-weight: normal;
