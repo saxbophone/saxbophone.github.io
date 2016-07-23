@@ -24,7 +24,7 @@ html {
  * FIXME: Should be responsive in future.
  */
 body {
-  width: 640px;
+  width: 800px;
   display: inline-block;
   margin: 0px auto;
   text-align: center;
