@@ -65,3 +65,10 @@ a:active:before {
 a:active:after {
   content: "<";
 }
+
+/*
+ * Set border color for <hr>
+ */
+hr {
+  border-color: #666;
+}
