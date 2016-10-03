@@ -6,7 +6,7 @@
   font-family: Courier;
   font-style: normal;
   font-weight: normal;
-  color: white;
+  color: #666;
   background-color: black;
   padding: 0 0;
   border: 0 0;
@@ -53,7 +53,7 @@ a:after {
  */
 a:hover {
   color: black;
-  background-color: white;
+  background-color: #666;
   font-weight: bold;
 }
 a:active {
