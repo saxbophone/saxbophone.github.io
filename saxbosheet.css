@@ -24,7 +24,7 @@ html {
  * FIXME: Should be responsive in future.
  */
 body {
-  width: 75rem; /* 75 chars at standard text size = long enough for public key signature */
+  width: 75em; /* 75 chars at standard text size = long enough for public key signature */
   display: inline-block;
   margin: 0px auto;
   text-align: center;
