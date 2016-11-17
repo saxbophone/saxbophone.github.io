@@ -60,6 +60,10 @@ a[href^="mailto"]:after {
 /*
  * Link change states
  */
+a {
+  /* default colour is a bit brighter than default, to stand out */
+  color: #888;
+}
 a:hover {
   color: black;
   background-color: #666;
