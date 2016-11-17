@@ -47,6 +47,15 @@ a:before {
 a:after {
   content: "]";
 }
+/*
+ * Mailto <links> go inside angle-brackets instead
+ */
+a[href^="mailto"]:before {
+  content: "<";
+}
+a[href^="mailto"]:after {
+  content: ">";
+}
 
 /*
  * Link change states
