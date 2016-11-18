@@ -34,7 +34,7 @@ section {
   text-align: left;
 }
 
-strong {
+strong, a {
   font-weight: bold;
 }
 
