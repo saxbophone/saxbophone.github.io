@@ -90,8 +90,6 @@ hr {
  * rounded corners for a circular-cropped image
  */
 img.rounded {
-  width: 100%;
-  height: auto;
   position: relative;
   overflow: hidden;
   -webkit-border-radius: 50%;
