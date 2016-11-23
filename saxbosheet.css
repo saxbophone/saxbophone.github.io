@@ -85,3 +85,18 @@ a:active:after {
 hr {
   border-color: #666;
 }
+
+/*
+ * rounded corners for a circular-cropped image
+ */
+img.rounded {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
