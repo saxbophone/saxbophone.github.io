@@ -24,6 +24,11 @@
   }
 }
 
+::selection {
+  color: white;
+  background: #666;
+}
+
 /*
  * Layout
  */
