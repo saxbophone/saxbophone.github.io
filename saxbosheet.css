@@ -12,6 +12,16 @@
   padding: 0 0;
   border: 0 0;
   margin: 0 0;
+  /* 50Hz glow */
+  animation: glow 0.02s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes glow {
+  to {
+    text-shadow: 0 0 10px #333; /* default colour */
+    -webkit-filter: blur(0.1px); /* a soft blur */
+  }
 }
 
 /*
@@ -37,6 +47,7 @@ section {
 
 h1, h2, h3, h4, strong {
   color: #666;
+  text-shadow-color: #666;
 }
 
 h1:after, h2:after, h3:after {
@@ -69,6 +80,7 @@ h4 {
 hr {
   /*height: 0.25ch;*/
   color: #494949;
+  text-shadow-color: #494949;
   border: 0;
   height: 1ch;
 }
@@ -109,11 +121,20 @@ a[href^="mailto"]:after {
 a {
   /* default colour is a bit brighter than default, to stand out */
   color: #999;
+  text-shadow-color: #999;
+  /* animation setup */
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 a:hover {
   color: black;
   font-weight: bold;
   background-color: #999;
+  /* blur animation effect */
+  -webkit-filter: blur(1px);
 }
 a:active {
   font-weight: normal;
