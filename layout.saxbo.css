@@ -1,23 +1,11 @@
 /*
  * Layout
  */
-
-/*
- * Font size is set based on device width to achieve responsive design
- *
- * Our font's ratio is 8:20 (width:height). We also want to add a little head-room.
- *
- * 20 = 8 * 2.5
- *
- * Therefore:
- *
- * font-size = floor( ( min-width / 74 ) * 2.5 )
- */
-@media screen and (max-width: 499px) { * { font-size: 3.14159265vw; } }
-@media screen and (min-width: 500px) and (max-width: 1024px) { * { font-size: 2.71828vw; } }
-@media screen and (min-width: 1025px) and (max-width: 1366px) { * { font-size: 1.61803vw; } }
-@media screen and (min-width: 1367px) and (max-width: 1599px) { * { font-size: 1.41421vw; } }
-@media screen and (min-width: 1600px) { * { font-size: 1.351351351vw; } }
+@media screen and (max-width: 499px) { * { font-size: 3.14159265vw; } } /* PI */
+@media screen and (min-width: 500px) and (max-width: 1024px) { * { font-size: 2.71828vw; } } /* e */
+@media screen and (min-width: 1025px) and (max-width: 1366px) { * { font-size: 1.61803vw; } } /* golden ratio */
+@media screen and (min-width: 1367px) and (max-width: 1599px) { * { font-size: 1.41421vw; } } /* pythagoras' constant */
+@media screen and (min-width: 1600px) { * { font-size: 1.351351351vw; } } /* 100 / 74 */
 
 html {
   text-align: center;
@@ -34,6 +22,7 @@ section {
   text-align: left;
 }
 
+/* all these are relative to the base font size */
 h1 {
   font-size: 2em;
 }
