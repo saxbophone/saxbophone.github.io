@@ -83,7 +83,8 @@ a:hover {
   font-weight: bold;
   background-color: #999;
   /* blur animation effect */
-  -webkit-filter: blur(1px);
+  box-shadow: 0 0 0.1em 0.05em inset;
+  -webkit-filter: blur(0.1em);
 }
 a:active {
   font-weight: normal;

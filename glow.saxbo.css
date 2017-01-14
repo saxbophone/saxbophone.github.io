@@ -6,7 +6,7 @@
 
 @keyframes glow {
   to {
-    text-shadow: 0 0 10px #333; /* default colour */
-    -webkit-filter: blur(0.1px); /* a soft blur */
+    text-shadow: 0 0 0.5em #333; /* default colour */
+    -webkit-filter: blur(0.0125em); /* a soft blur */
   }
 }
