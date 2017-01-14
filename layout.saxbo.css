@@ -1,0 +1,51 @@
+/*
+ * Layout
+ */
+
+/*
+ * Font size is set based on device width to achieve responsive design
+ *
+ * Our font's ratio is 8:20 (width:height). We also want to add a little head-room.
+ *
+ * 20 = 8 * 2.5
+ *
+ * Therefore:
+ *
+ * font-size = floor( ( min-width / 74 ) * 2.5 )
+ */
+@media screen and (max-width: 499px) { * { font-size: 3.14159265vw; } }
+@media screen and (min-width: 500px) and (max-width: 1024px) { * { font-size: 2.71828vw; } }
+@media screen and (min-width: 1025px) and (max-width: 1366px) { * { font-size: 1.61803vw; } }
+@media screen and (min-width: 1367px) and (max-width: 1599px) { * { font-size: 1.41421vw; } }
+@media screen and (min-width: 1600px) { * { font-size: 1.351351351vw; } }
+
+html {
+  text-align: center;
+}
+/* Body width is hard-coded to 74 chars, font size is set per-device size to make this fit */
+body {
+  width: 74ch; /* 74 chars at standard text size = long enough for public key signature */
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+}
+
+section {
+  text-align: left;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}

@@ -1,12 +1,22 @@
-* {
-  color: #333;
-  background-color: black;
-  font-family: "VT323", monospace;
+/*
+ * Layout
+ */
+html {
+  text-align: center;
+}
+/*
+ * Hard-code the body width for now.
+ * FIXME: Should be responsive in future.
+ */
+body {
+  width: 74ch; /* 74 chars at standard text size = long enough for public key signature */
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
 }
 
-::selection {
-  color: white;
-  background: #666;
+section {
+  text-align: left;
 }
 
 h1, h2, h3, h4, strong {
@@ -20,6 +30,22 @@ h1:after, h2:after, h3:after {
 
 h1, h2, h3, h4, strong:not(.preserve-case) {
   text-transform: lowercase;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 29px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 23px;
 }
 
 /*
