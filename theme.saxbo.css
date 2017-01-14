@@ -1,27 +1,7 @@
 * {
-  /*
-   * RESET spacing, colours and text decorations.
-   */
-  text-decoration: none;
-  font-family: "VT323", monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
   color: #333;
   background-color: black;
-  padding: 0 0;
-  border: 0 0;
-  margin: 0 0;
-  /* 25Hz glow */
-  animation: glow 0.04s infinite alternate;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes glow {
-  to {
-    text-shadow: 0 0 10px #333; /* default colour */
-    -webkit-filter: blur(0.1px); /* a soft blur */
-  }
+  font-family: "VT323", monospace;
 }
 
 ::selection {
@@ -128,12 +108,13 @@ a {
   color: #999;
   text-shadow-color: #999;
   /* animation setup */
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
+
 a:hover {
   color: black;
   font-weight: bold;
