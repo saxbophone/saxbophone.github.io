@@ -1,12 +1,16 @@
-* {
-  /* 25Hz glow */
-  animation: glow 0.04s infinite alternate;
-  animation-timing-function: ease-in-out;
-}
+@media screen and (min-width: 601px) {
 
-@keyframes glow {
-  to {
-    text-shadow: 0 0 0.5em #333; /* default colour */
-    -webkit-filter: blur(0.0125em); /* a soft blur */
+  * {
+    /* 25Hz glow */
+    animation: glow 0.04s infinite alternate;
+    animation-timing-function: ease-in-out;
   }
+
+  @keyframes glow {
+    to {
+      text-shadow: 0 0 0.5em #333; /* default colour */
+      -webkit-filter: blur(0.0125em); /* a soft blur */
+    }
+  }
+
 }
