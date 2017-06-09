@@ -1,23 +1,19 @@
 @media screen and (min-width: 601px) {
 
   * {
-    color: #333;
+    color: #28005a;
     background-color: black;
     font-family: "VT323", monospace;
   }
 
   ::selection {
-    color: white;
-    background: #666;
+    color: #ffed30;
+    background: #857a00;
   }
 
   h1, h2, h3, h4, strong {
-    color: #666;
-    text-shadow-color: #666;
-  }
-
-  h1:after, h2:after, h3:after {
-    content: "_";
+    color: #5243ff;
+    text-shadow-color: #080012;
   }
 
   h1, h2, h3, h4, strong:not(.preserve-case) {
@@ -29,8 +25,8 @@
    */
   hr {
     /*height: 0.25ch;*/
-    color: #494949;
-    text-shadow-color: #494949;
+    color: #28005a;
+    text-shadow-color: #28005a;
     border: 0;
     height: 1ch;
   }
@@ -70,23 +66,29 @@
    */
   a {
     /* default colour is a bit brighter than default, to stand out */
-    color: #999;
-    text-shadow-color: #999;
+    color: #9541ff;
+    text-shadow-color: #080012;
     /* animation setup */
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 5s linear;
+    -moz-transition: all 5s linear;
+    -o-transition: all 5s linear;
+    -ms-transition: all 5s linear;
+    transition: all 5s linear;
   }
 
   a:hover {
     color: black;
+    background-color: #ff30f6;
     font-weight: bold;
-    background-color: #999;
+    /* animation setup */
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
     /* blur animation effect */
     box-shadow: 0 0 0.1em 0.05em inset;
-    -webkit-filter: blur(0.1em);
+    -webkit-filter: blur(0.05em);
   }
   a:active {
     font-weight: normal;
@@ -121,5 +123,30 @@
   @-moz-keyframes spin { 75%, 100% { -moz-transform: rotate(360deg); } }
   @-webkit-keyframes spin { 75%, 100% { -webkit-transform: rotate(360deg); } }
   @keyframes spin { 75%, 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+  .end-cursor {
+    color: #ffed30;
+    background-color: #857a00;
+    -webkit-animation:blink 1s ease-in-out infinite;
+    -moz-animation:blink 1s ease-in-out infinite;
+    animation:blink 1s ease-in-out infinite;
+  }
+
+  @-webkit-keyframes blink {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  @-moz-keyframes blink {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  @-o-keyframes blink {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  @keyframes blink {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+  }
 
 }
