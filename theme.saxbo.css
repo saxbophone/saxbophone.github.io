@@ -1,8 +1,8 @@
 @media screen and (min-width: 601px) {
 
   * {
-    color: #28005a;
-    background-color: black;
+    color: #6403e0;
+    background-color: #28005a;
     font-family: "VT323", monospace;
   }
 
@@ -12,8 +12,8 @@
   }
 
   h1, h2, h3, h4, strong {
-    color: #5243ff;
-    text-shadow-color: #080012;
+    color: #0905e2;
+    text-shadow-color: #03008f;
   }
 
   h1, h2, h3, h4, strong:not(.preserve-case) {
@@ -25,8 +25,7 @@
    */
   hr {
     /*height: 0.25ch;*/
-    color: #28005a;
-    text-shadow-color: #28005a;
+    color: #3d008a;
     border: 0;
     height: 1ch;
   }
@@ -66,19 +65,19 @@
    */
   a {
     /* default colour is a bit brighter than default, to stand out */
-    color: #9541ff;
-    text-shadow-color: #080012;
+    color: #de00d5;
+    text-shadow-color: #de00d5;
     /* animation setup */
-    -webkit-transition: all 5s linear;
-    -moz-transition: all 5s linear;
-    -o-transition: all 5s linear;
-    -ms-transition: all 5s linear;
-    transition: all 5s linear;
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    -ms-transition: all 3s ease-out;
+    transition: all 3s ease-out;
   }
 
   a:hover {
-    color: black;
-    background-color: #ff30f6;
+    color: #28005a;
+    background-color: #de00d5;
     font-weight: bold;
     /* animation setup */
     -webkit-transition: all 0.25s;
