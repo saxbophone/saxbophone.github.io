@@ -151,9 +151,9 @@
   /* 'shzoom' --super-dramatic text zoom on page load */
 
   * {
-    -webkit-animation:shzoom 0.5s linear 1;
-    -moz-animation:shzoom 0.5s linear 1;
-    animation:shzoom 0.5s linear 1;
+    -webkit-animation:shzoom 0.5s ease-out 1;
+    -moz-animation:shzoom 0.5s ease-out 1;
+    animation:shzoom 0.5s ease-out 1;
   }
 
   @-webkit-keyframes shzoom {
