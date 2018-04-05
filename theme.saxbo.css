@@ -121,7 +121,7 @@
 
   @-moz-keyframes spin { 75%, 100% { -moz-transform: rotate(360deg); } }
   @-webkit-keyframes spin { 75%, 100% { -webkit-transform: rotate(360deg); } }
-  @keyframes spin { 75%, 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  @keyframes spin { 75%, 100% { transform:rotate(360deg); } }
 
   .end-cursor {
     color: #ffed30;
@@ -146,6 +146,27 @@
   @keyframes blink {
     0%   { opacity: 1; }
     100% { opacity: 0; }
+  }
+
+  /* 'shzoom' --super-dramatic text zoom on page load */
+
+  * {
+    -webkit-animation:shzoom 0.5s linear 1;
+    -moz-animation:shzoom 0.5s linear 1;
+    animation:shzoom 0.5s linear 1;
+  }
+
+  @-webkit-keyframes shzoom {
+    0%   { -webkit-transform: scale(0); }
+    100% { -webkit-transform: scale(1); }
+  }
+  @-moz-keyframes shzoom {
+    0%   { -moz-transform: scale(0); }
+    100% { -moz-transform: scale(1); }
+  }
+  @keyframes shzoom {
+    0%   { transform: scale(0); }
+    100% { transform: scale(1); }
   }
 
 }
